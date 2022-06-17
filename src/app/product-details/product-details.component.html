@@ -1,0 +1,18 @@
+<section class="hero-section">
+    <h1 class="hero-heading text-content text-light">More About the Dish</h1>
+
+
+</section>
+<div *ngIf="product">
+    <div class="container">
+    <h1 class="details-name"> {{ product.name }}</h1>
+    
+    <h2 class="details-price">Price: {{product.price}} € </h2>
+    
+    <p class="details"> {{product.details}} </p>
+    <div class="d-grid gap-2 col-4 mx-auto mb-5">
+        <button class="btn btn-success order-btn" type="button">Add to Cart</button>
+        <button class="btn btn-primary order-btn" type="button" routerLink="/menu">Go back</button>
+      </div>
+</div>
+</div>

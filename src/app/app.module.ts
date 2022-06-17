@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomePageComponent,
     AboutUsComponent,
+    MenuComponent,
+    ProductDetailsComponent,
 
   ],
   imports: [

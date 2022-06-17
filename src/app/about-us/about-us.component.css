@@ -45,3 +45,8 @@
     margin-top: 10%;
     margin-right: 10%;
 }
+@media (max-width: 780px){
+    .aboutimg {
+        display: none;
+    }
+}
