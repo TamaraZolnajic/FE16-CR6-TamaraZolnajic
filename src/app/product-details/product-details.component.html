@@ -3,15 +3,15 @@
 
 
 </section>
-<div *ngIf="product">
+<div *ngIf="products1">
     <div class="container">
-    <h1 class="details-name"> {{ product.name }}</h1>
+    <h1 class="details-name"> {{ products1.name }}</h1>
     
-    <h2 class="details-price">Price: {{product.price}} € </h2>
+    <h2 class="details-price">Price: {{products1.price}} € </h2>
     
-    <p class="details"> {{product.details}} </p>
+    <p class="details"> {{products1.details}} </p>
     <div class="d-grid gap-2 col-4 mx-auto mb-5">
-        <button class="btn btn-success order-btn" type="button">Add to Cart</button>
+        <button class="btn btn-success order-btn" type="button" (click)="addToCart1()" >Add to Cart</button>
         <button class="btn btn-primary order-btn" type="button" routerLink="/menu">Go back</button>
       </div>
 </div>

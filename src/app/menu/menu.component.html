@@ -11,7 +11,7 @@
                     <div class="card-body ">
                         <h5 class="card-title ">{{product.name}}</h5><hr>
                         <p *ngIf="product.description " class="card-text "> {{ product.description }}</p><hr>
-                        <p *ngIf="product.price " class="card-text "> {{ product.price }} €</p><hr>
+                        <p *ngIf="product.price " class="card-text "> {{ product.price | number : '1.2-2' }} €</p><hr>
 
                         <div *ngIf="product.availability; then thenBlock else elseBlock "></div>
                         <ng-template #thenBlock>
