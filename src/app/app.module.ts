@@ -7,9 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { MenuComponent } from './menu/menu.component';
-import { CartComponent } from './cart/cart.component';
-import { SpecialsComponent } from './specials/specials.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,14 +16,12 @@ import { SpecialsComponent } from './specials/specials.component';
     FooterComponent,
     HomePageComponent,
     AboutUsComponent,
-    MenuComponent,
-    CartComponent,
-    SpecialsComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

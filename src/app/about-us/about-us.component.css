@@ -1,4 +1,4 @@
-/* .hero-section{
+.hero-section{
     background-image: url(/assets/img/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -9,7 +9,7 @@
     padding-top: 10%;
     font-size: 5.5rem;
     font-family: 'Great Vibes', cursive;
-} */
+}
 .about{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -37,4 +37,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
     transform: scale(1.05, 1.05);
     transition: 0.5s all ease-out;
+}
+.aboutimg{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-right: 10%;
 }
