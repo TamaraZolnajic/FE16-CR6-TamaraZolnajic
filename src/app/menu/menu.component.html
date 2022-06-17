@@ -1,34 +1,40 @@
 <div class="container ">
-    <h1 class="" style="font-family: 'Great Vibes', cursive; font-size: 4rem; display: flex; justify-content: center; padding: 3%;">Our Specialties</h1>
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 pb-5">
-        <div *ngFor=" let product of products; index as id ">
+  <h1 class=""
+    style="font-family: 'Great Vibes', cursive; font-size: 4rem; display: flex; justify-content: center; padding: 3%;">
+    Our Specialties</h1>
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 pb-5">
+    <div *ngFor=" let product of products; index as id ">
 
-            <div class="col ">
-
-
-                <div class="card h-100 card-decor " style=" width: 18rem shadow">
-                    <img src="{{product.img}} " class="card-img-top cardimg" alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">{{product.name}}</h5><hr>
-                        <p *ngIf="product.description " class="card-text "> {{ product.description }}</p><hr>
-                        <p *ngIf="product.price " class="card-text "> {{ product.price | number : '1.2-2' }} €</p><hr>
-
-                        <div *ngIf="product.availability; then thenBlock else elseBlock "></div>
-                        <ng-template #thenBlock>
-                            <div class="buttons d-flex justify-content-start gap-3 "><a routerLink="/products/{{id}} " class="btn buttons btn-primary ">Details</a>
-                                <button class="btn btn-success " (click)="addToCart(product) ">Order</button></div>
-                        </ng-template>
-                        <ng-template #elseBlock>
-                            <p style="color:red ;"> This product is currently not available!</p>
-                        </ng-template>
+      <div class="col ">
 
 
+        <div class="card h-100 card-decor " style=" width: 18rem shadow">
+          <img src="{{product.img}} " class="card-img-top cardimg" alt="... ">
+          <div class="card-body ">
+            <h5 class="card-title ">{{product.name}}</h5>
+            <hr>
+            <p *ngIf="product.description " class="card-text "> {{ product.description }}</p>
+            <hr>
+            <p *ngIf="product.price " class="card-text "> {{ product.price | number : '1.2-2' }} €</p>
+            <hr>
 
-                    </div>
-                </div>
-            </div>
+            <div *ngIf="product.availability; then thenBlock else elseBlock "></div>
+            <ng-template #thenBlock>
+              <div class="buttons d-flex justify-content-start gap-3 "><a routerLink="/products/{{id}} "
+                  class="btn buttons btn-primary ">Details</a>
+                <button class="btn btn-success " (click)="addToCart(product) ">Order</button></div>
+            </ng-template>
+            <ng-template #elseBlock>
+              <p style="color:red ;"> This product is currently not available!</p>
+            </ng-template>
+
+
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 
