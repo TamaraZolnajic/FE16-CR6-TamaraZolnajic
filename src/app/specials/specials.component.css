@@ -1,0 +1,17 @@
+#specials-heading{
+    color: #A44E2E;
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    margin-top: 2%;
+}
+.specials{
+    margin: 2%;
+}
+.specials-btn{
+    color: #0B6EFD;
+}
+.specials-btn:hover{
+    color: white;
+    background-color: #0B6EFD;
+}
