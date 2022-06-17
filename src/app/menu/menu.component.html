@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ">
     <h1 class="" style="font-family: 'Great Vibes', cursive; font-size: 4rem; display: flex; justify-content: center; padding: 3%;">Our Specialties</h1>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 pb-5">
         <div *ngFor=" let product of products; index as id ">
@@ -16,7 +16,7 @@
                         <div *ngIf="product.availability; then thenBlock else elseBlock "></div>
                         <ng-template #thenBlock>
                             <div class="buttons d-flex justify-content-start gap-3 "><a routerLink="/products/{{id}} " class="btn buttons btn-primary ">Details</a>
-                                <button class="btn btn-success " >Order</button></div>
+                                <button class="btn btn-success " (click)="addToCart(product) ">Order</button></div>
                         </ng-template>
                         <ng-template #elseBlock>
                             <p style="color:red ;"> This product is currently not available!</p>

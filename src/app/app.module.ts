@@ -10,6 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     AboutUsComponent,
     MenuComponent,
     ProductDetailsComponent,
+    CartComponent,
 
   ],
   imports: [
