@@ -41,9 +41,6 @@
 .aboutimg{
     width: 30vw;
     height: 30vh;
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-right: 10%;
 }
 @media (max-width: 780px){
     .aboutimg {

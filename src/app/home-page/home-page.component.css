@@ -32,7 +32,6 @@
 }
 .specials{
     margin: 2%;
-    margin-left: 15%;
 }
 .specials-btn{
     color: #0B6EFD;
@@ -41,6 +40,31 @@
     color: white;
     background-color: #0B6EFD;
 }
-
+ @media screen and (max-width:600px) {
+    .hp-img {
+        display: none;
+    }
+    .hero-section{
+        height: 50vh;
+    }
+    .hero-heading{
+        font-size: 2rem;
+        
+    }
+    .hero-h{
+        font-size: 1rem;
+       
+    }
+    .homepage-heading{
+        font-family: 'Great Vibes', cursive;  
+        font-size: 2rem;
+        text-align: center;
+        color: #A44E2E;
+    }
+    
+    .specials-all{
+        display: none;
+    }
+ }
 
 
